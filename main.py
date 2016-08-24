@@ -1,14 +1,3 @@
-#
-# This program is a plot tool for Yahoo stock data using Qt4 and
-# the python library Matplotlib. It is possible to get new Yahoo
-# stock data and save it in a file or database.
-# Data can also be imported to the tool via files or databases.
-# The imported data can be used to plot financial graphs.
-# Available graphs: line,scatter and ohlc.
-# Written by Christopher Niedermaier
-#
-
-
 import sys
 from PyQt4 import QtGui, uic
 import matplotlib.pyplot as plt
@@ -67,7 +56,7 @@ class MainWindow(QtGui.QMainWindow):
             self.subplot_area.append(text + " imported\n")
             self.create_btn.setEnabled(True)
 
-    # Ppen the show data sets dialog.
+    # Open the show data sets dialog.
     def show_data(self):
         dialog = data.DataDialog(self.name_list, self.df_list)
         dialog.exec_()
