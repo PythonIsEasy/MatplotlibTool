@@ -6,6 +6,6 @@ and save it in a file and/or databases.
 
 You can also read files for data or get data from databases and import the data.
 
-The imported data can be uses to plot time series financial charts with Matplotlib
+The imported data can be used to plot time series financial charts with Matplotlib
 Available charts: line, scatter, olhc
 
